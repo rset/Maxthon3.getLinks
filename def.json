@@ -1,0 +1,25 @@
+﻿[
+  {
+    "type": "extension",
+    "frameworkVersion":"1.0.6",
+    "version":"12.11.2012",
+    "guid": "{26eaae64-d50c-4643-8525-72d0caf8666f}",
+    "name" : "M3_getlinks",
+    "icon" : "icon",
+    "title": {
+             "en": "M3_getlinks2",
+             },
+    "description" : {
+             "en" : "links",
+             },
+    "actions": [{
+             "type": "script",
+             "entryPoints": [
+                    "toolbar"
+                ],
+             "js": ["M3_getlinks.js"],
+	
+	"includeFrames": false
+             }]
+                }
+]
