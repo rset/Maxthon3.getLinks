@@ -55,6 +55,7 @@ try
 		document.body.insertBefore(d, document.body.firstChild);
 	}
 }
+
 catch(e)
 {
 //	alert(e);
