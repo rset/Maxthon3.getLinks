@@ -15,7 +15,7 @@ try
 		images[ii].style.display='none';
 	}
 
-	for (i=0; i<linkSayisi; i++)
+	for (i=0; i<linkSayisi; ++i)
 	{
 		if(Links[i].href.match(/http(s)?\:\/\/(www\.)?rapid|hotfile|uploaded|ul.to|freakshare|bitshare.+/g) 
 		&& (!Links[i].href.match(/.+ref|register.+/g)))
@@ -31,9 +31,9 @@ try
 	{
 		var d = document.createElement('div');
 		d.setAttribute("style", stil);
-		d.innerHTML+=document.getElementsByTagName('title')[0].innerHTML+"<br />\n";
-		d.innerHTML+=document.location.href+"<br /><br />\n";
-		for (var j=0; j<downloadLinksSayi; ++j)
+		d.innerHTML += document.getElementsByTagName('title')[0].innerHTML+"<br />\n";
+		d.innerHTML += document.location.href+"<br /><br />\n";
+		for (var j = 0; j<downloadLinksSayi; ++j)
 		{
 			d.innerHTML += downloadLinks[j] + "<br />\n";
 		}
@@ -43,13 +43,13 @@ try
 	//    <pre></pre>
 	 else if(Pre.length>0)
 	{	
-		var d =document.createElement('div');
+		var d = document.createElement('div');
 		d.setAttribute("style", stil);
-		d.innerHTML+=document.getElementsByTagName('title')[0].innerHTML+"<br />\n";
-		d.innerHTML+=document.location.href+"<br /><br />\n";
-		for(i=0;i<Pre_count;i++)
+		d.innerHTML += document.getElementsByTagName('title')[0].innerHTML+"<br />\n";
+		d.innerHTML += document.location.href+"<br /><br />\n";
+		for(i=0; i<Pre_count; ++i)
 		{
-			d.innerHTML+= Pre[i].innerText+"<br>\n\r";
+			d.innerHTML += Pre[i].innerText+"<br>\n\r";
 			
 		}
 		document.body.insertBefore(d, document.body.firstChild);
