@@ -20,7 +20,7 @@ try
 			downloadLinks.push(Links[i]);		
 		}
 	}
-	//http://rockdizfile.com/78ik31f6nog9/Y%C4%B1ld%C4%B1z_Tilbe_-_Sana_Kalbim_Ge%C3%A7ti_(2012)mp3yolu.org.mp3.html
+
 	var downloadLinksSayi = downloadLinks.length;
 	
 	if ( downloadLinksSayi>0)
